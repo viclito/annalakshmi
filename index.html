@@ -1,0 +1,805 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>annalakshmi</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <meta name="description" content="Litho is a clean and modern design, BootStrap 5 responsive, business and portfolio multipurpose HTML5 template with 39+ ready homepage demos.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+        <style>
+            .qrcontainer {
+                position: fixed;
+                bottom: 140px;
+                right: 20px;
+                z-index: 1000; /* Ensure QR code is above other content */
+                
+                padding: 10px;
+            }
+            
+            .qr-code {
+                position: relative;
+            }
+            
+            .qr-code img {
+                display: block;
+                width: 200px;
+                height: 200px;
+            }
+            
+            .qr-toggle {
+                display: none;
+                position: absolute;
+                bottom: -20px;
+                right: 0;
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border-radius: 50%;
+                cursor: pointer;
+                background-image: url('qr-code.png');
+                background-size: cover;
+            }
+            
+            @media (max-width: 768px) {
+                .qr-code img {
+                    display: none;
+                }
+            
+                .qr-toggle {
+                    display: flex;
+                }
+            }
+        </style>
+    </head>
+    <body data-mobile-nav-style="classic">
+        <!--start header-->
+        <header>
+            <!-- start navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
+                <div class="container-fluid nav-header-container">
+                    <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/mainlogo.jpeg"  class="default-logo" alt="" style="width: 60px; ">
+                            <img src="images/mainlogo.jpeg"  class="alt-logo mobile-logo" alt="" style="width: 60px; ">
+                            <!-- <img src="images/mainlogo.jpeg"  class="mobile-logo" alt="" style="width: 60px;"> -->
+                        </a>
+                    </div>
+                    <div class="col-auto col-lg-8 menu-order px-lg-0">
+                        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav alt-font">
+                                <li class="nav-item dropdown megamenu">
+                                    <a href="#" class="nav-link">Home</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="#about" class="nav-link">About</a>   
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="#participate" class="nav-link">Participate</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown megamenu">
+                                    <a href="#resource" class="nav-link">Resources</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="#progress" class="nav-link">Progress</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown simple-dropdown">
+                                    <a href="#facilities" class="nav-link">Facilities</a>
+                                    
+                                </li>
+                                <li class="nav-item dropdown megamenu">
+                                    <a href="#" class="nav-link">Payment</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-2 text-end pe-0 font-size-0">
+                        <div class="header-social-icon d-inline-block">
+                            
+                            <a href="tel:8675463333"><i class="fa-solid fa-phone"></i></a>
+                            <a href="mailto:sriannalakshmitrust@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://wa.me/8675463333" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navigation -->
+        </header>
+        <!-- end header -->
+        <!-- start hero section -->
+        <section class="p-0 mobile-height parallax" data-parallax-background-ratio="0.5" style="background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="opacity-light bg-gradient-black-blue z-index-0"></div>
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 d-flex flex-column justify-content-center text-center full-screen position-relative z-index-1 md-landscape-h-600px">
+                        <!-- <span class="margin-35px-bottom alt-font text-large text-white font-weight-300 d-block xs-margin-15px-bottom">Unlimited power customization</span> -->
+                        <h2 class="text-white alt-font font-weight-600 letter-spacing-minus-1 text-shadow-large sm-no-text-shadow"><span style="text-shadow: 1px 1px 2px #f4f4f4 ,2px 3px 3px #72ff9c ;">SRI ANNALAKSHMI</span> CHARITABLE TRUST</h2>
+                        <div class="text-center position-absolute bottom-100px left-0px w-100 sm-bottom-50px">
+                            <a href="https://www.youtube.com/watch?v=NRri8JgBPSo" class="popup-youtube video-icon-box video-icon-large position-relative">
+                                <span>
+                                    <span class="video-icon bg-shamrock-green margin-15px-right">
+                                        <i class="fa-solid fa-play text-extra-dark-gray text-extra-large"></i>
+                                        <span class="video-icon-sonar">
+                                            <span class="video-icon-sonar-bfr bg-shamrock-green opacity-7"></span>
+                                        </span>
+                                    </span>
+                                    <span class="video-icon-text alt-font text-medium text-white text-uppercase text-decoration-line-bottom d-inline-block align-middle font-weight-500">See how it works</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end hero section -->
+        <!-- start section -->
+        <section class="big-section" id="about">
+            <div class="container">
+                <div class="row align-items-lg-center justify-content-center">
+                    <div class="col-lg-4 col-md-6 fancy-text-box-style-01 text-center text-md-start md-margin-50px-bottom sm-margin-40px-bottom wow animate__fadeIn">
+                        <div class="fancy-text-box padding-3-half-rem-all md-padding-4-rem-all xs-padding-30px-all">
+                            <div class="fancy-text-box-border-left border-color-shamrock-green"></div>
+                            <!-- <h1 class="alt-font fancy-text-content font-weight-600 text-extra-dark-gray d-inline-block align-middle letter-spacing-minus-5px">28</h1> -->
+                            <!-- <div class="alt-font text-extra-medium text-extra-dark-gray font-weight-500 text-start d-inline-block align-middle w-90px mx-auto line-height-20px position-relative top-minus-4px">Years experience working</div> -->
+                             <img src="images/mainlogo.jpeg" alt="">
+                            <div class="fancy-text-box-border-right border-color-shamrock-green"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 text-center text-md-start wow animate__fadeIn" data-wow-delay="0.2s">
+                        <span class="alt-font text-medium text-uppercase margin-20px-bottom d-block">Chairman</span>
+                        <div class="alt-font text-extra-large text-extra-dark-gray font-weight-500 line-height-34px w-85 lg-w-100 sm-margin-15px-bottom">R.Praveen Kumar</div>
+                    </div>
+                    <div class="col-lg-5 col-md-10 text-center text-md-start wow animate__fadeIn" data-wow-delay="0.4s">
+                        <p class="w-85 lg-w-100">Our mission is to make a positive impact in our community by supporting education, healthcare, and poverty relief initiatives. Join us in making a difference.</p>
+                        <p class="w-85 lg-w-100">A charitable trust is a legal arrangement where assets are managed by trustees for charitable purposes, such as education, poverty relief, or medical research. It ensures that donations are used for public benefit, providing tax advantages to donors and promoting societal welfare through organized, impactful giving.</p>
+                        <!-- <a href="about-us.html" class="btn btn-link thin btn-extra-large text-extra-dark-gray">About company</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="big-section bg-light-gray" id="participate">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-7 col-sm-8 text-center margin-6-rem-bottom wow animate__fadeIn">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-1px">Get Involved</h4>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center">
+                    <!-- start feature box item -->
+                    <div class="col md-margin-50px-bottom wow animate__fadeIn">
+                        <div class="feature-box padding-3-rem-lr lg-padding-2-rem-lr sm-padding-1-rem-lr">
+                            <div class="feature-box-icon feature-box-icon-rounded dark bg-white w-130px h-130px rounded-circle box-shadow-large margin-40px-bottom sm-margin-30px-bottom">
+                                <i class="line-icon-Talk-Man icon-large text-shamrock-green"></i>
+                                <div class="feature-box-icon-hover bg-gradient-shamrock-green-light-orange rounded-circle"></div>
+                            </div>
+                            <div class="feature-box-content">
+                                <span class="alt-font font-weight-500 margin-15px-bottom d-block text-extra-dark-gray">Volunteer</span>
+                                <p>Join our team of dedicated volunteers and help us make a difference. Opportunities are available in various programs and events.</p>
+                                <!-- <a href="our-services.html" class="btn btn-link thin btn-large text-extra-dark-gray">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col md-margin-50px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <div class="feature-box padding-3-rem-lr lg-padding-2-rem-lr sm-padding-1-rem-lr">
+                            <div class="feature-box-icon feature-box-icon-rounded dark bg-white w-130px h-130px rounded-circle box-shadow-large margin-40px-bottom sm-margin-30px-bottom">
+                                <i class="line-icon-Money-Bag icon-large text-shamrock-green"></i>
+                                <div class="feature-box-icon-hover bg-gradient-shamrock-green-light-orange rounded-circle"></div>
+                            </div>
+                            <div class="feature-box-content">
+                                <span class="alt-font font-weight-500 margin-15px-bottom d-block text-extra-dark-gray">Donate</span>
+                                <p>Your generosity helps us continue our mission. Learn how you can contribute financially or through in-kind donations.</p>
+                                <!-- <a href="our-services.html" class="btn btn-link thin btn-large text-extra-dark-gray">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                    <!-- start feature box item -->
+                    <div class="col wow animate__fadeIn" data-wow-delay="0.4s">
+                        <div class="feature-box padding-3-rem-lr lg-padding-2-rem-lr sm-padding-1-rem-lr">
+                            <div class="feature-box-icon feature-box-icon-rounded dark bg-white w-130px h-130px rounded-circle box-shadow-large margin-40px-bottom sm-margin-30px-bottom">
+                                <i class="line-icon-Gear-2 icon-large text-shamrock-green"></i>
+                                <div class="feature-box-icon-hover bg-gradient-shamrock-green-light-orange rounded-circle"></div>
+                            </div>
+                            <div class="feature-box-content">
+                                <span class="alt-font font-weight-500 margin-15px-bottom d-block text-extra-dark-gray">Fundraise</span>
+                                <p>Start your own fundraiser to support our cause. We provide tools and guidance to help you succeed.</p>
+                                <!-- <a href="our-services.html" class="btn btn-link thin btn-large text-extra-dark-gray">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end feature box item -->
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section id="resource" class="big-section cover-background" style="background-image: url('images/home-corporate-hand-crafted-bg.jpg');">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-10 col-lg-6 position-relative md-margin-9-rem-bottom wow animate__fadeIn">
+                        <div class="w-70 overflow-hidden position-relative xs-w-80">
+                            <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/318x386" alt="" />
+                        </div>
+                        <div class="position-absolute right-35px bottom-minus-50px w-50 lg-bottom-minus-30px xs-right-15px" data-wow-delay="0.2s" data-parallax-layout-ratio="1.1">
+                            <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/318x386" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-10 col-xl-4 col-lg-5 offset-lg-1">
+                        <h4 class="alt-font text-extra-dark-gray letter-spacing-minus-1px font-weight-600 margin-4-rem-bottom md-margin-3-rem-bottom wow animate__fadeIn">Resources</h4>
+                        <div class="row">
+                            <!-- start feature box item -->
+                            <div class="col-12 wow animate__fadeIn" data-wow-delay="0.2s">
+                                <div class="feature-box feature-box-left-icon">
+                                    <div class="feature-box-content last-paragraph-no-margin">
+                                        <span class="alt-font text-black font-weight-500 d-block margin-5px-bottom">News & Updates</span>
+                                        <p class="w-85 xs-w-100">Stay informed with the latest news, updates, and announcements from [Charity Trust Name].</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end feature box item -->
+                            <div class="col-12 wow animate__fadeIn" data-wow-delay="0.2s"><div class="w-100 h-1px bg-medium-gray margin-3-rem-tb md-margin-2-rem-tb"></div></div>
+                            <!-- start feature box item -->
+                            <div class="col-12 wow animate__fadeIn" data-wow-delay="0.4s">
+                                <div class="feature-box feature-box-left-icon">
+                                    <div class="feature-box-content last-paragraph-no-margin">
+                                        <span class="alt-font text-black font-weight-500 d-block margin-5px-bottom">Reports & Financials</span>
+                                        <p class="w-85 xs-w-100">Access our annual reports, financial statements, and transparency documents to see how your donations are being used.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end feature box item -->
+                            <!-- <div class="col-12 margin-4-rem-top d-inline-block wow animate__fadeIn" data-wow-delay="0.4s"><a href="index.html" class="btn btn-large btn-expand-ltr text-black section-link">Explore Features<span class="bg-shamrock-green"></span></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        
+        <!-- start section -->
+        <section id="progress" class="wow animate__fadeIn">
+            <div class="container">
+                <div class="row margin-8-rem-bottom md-margin-5-rem-bottom xs-margin-3-rem-bottom">
+                    <div class="col-xl-4 col-lg-5 col-md-6 sm-margin-5-rem-bottom xs-margin-2-rem-bottom">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-1px margin-30px-bottom">Track Our Journey Toward Change</h4>
+                        <p class="w-90 sm-w-100">Our progress bars highlight fundraising goals, volunteer hours, and project completions. Your support drives our success. Stay updated and see our impact. Together, we’re making a difference.</p>
+                    </div>
+                    <div class="col-lg-6 offset-xl-2 offset-lg-1 col-md-6" style="margin-top: 30px;">
+                        <!-- start progress bar item -->
+                        <div class="progress progress-step-style-01 margin-4-half-rem-bottom sm-margin-6-rem-bottom">
+                            <span class="progress-title alt-font text-small text-extra-dark-gray text-uppercase font-weight-500"> Fundraising Goals</span>
+                            <div class="progress-bar bg-gradient-shamrock-green-light-orange" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><span class="alt-font text-small text-extra-dark-gray font-weight-500">80%</span></div>
+                        </div>
+                        <!-- end progress bar item -->
+                        <!-- start progress bar item -->
+                        <div class="progress progress-step-style-01 margin-4-half-rem-bottom sm-margin-6-rem-bottom">
+                            <span class="progress-title alt-font text-small text-extra-dark-gray text-uppercase font-weight-500">Volunteer Hours</span>
+                            <div class="progress-bar bg-gradient-shamrock-green-light-orange" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="alt-font text-small text-extra-dark-gray font-weight-500">95%</span></div>
+                        </div>
+                        <!-- end progress bar item -->
+                        <!-- start progress bar item -->
+                        <div class="progress progress-step-style-01">
+                            <span class="progress-title alt-font text-small text-extra-dark-gray text-uppercase font-weight-500">Project Completion</span>
+                            <div class="progress-bar bg-gradient-shamrock-green-light-orange" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span class="alt-font text-small text-extra-dark-gray font-weight-500">75%</span></div>
+                        </div>
+                        <!-- end progress bar item -->
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section id="facilities" class="bg-light-gray wow animate__fadeIn">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-5 offset-lg-1 col-md-9 wow animate__fadeInRight" data-wow-delay="0.2s">
+                        <h4 class="alt-font cd-headline slide font-weight-600 text-extra-dark-gray letter-spacing-minus-1px line-height-40px margin-40px-bottom cd-headline sm-w-75 sm-line-height-30px xs-w-80 xs-margin-20px-bottom">
+                            <span class="p-0 d-block">Health and Medical Services</span>
+                            <!-- <span class="cd-words-wrapper">
+                                <b class="text-decoration-line-bottom-thick padding-5px-bottom is-visible">perfect design</b>
+                                <b class="text-decoration-line-bottom-thick padding-5px-bottom">perfect layout</b>
+                                <b class="text-decoration-line-bottom-thick padding-5px-bottom">perfect color</b>
+                            </span> -->
+                        </h4>                            
+                        <p class="w-90 md-w-100 margin-30px-bottom">Promoting health and well-being through accessible medical services. We offer various camps and checkups to ensure community health.</p>
+                        <ul class="w-90 list-style-01 font-weight-500 text-extra-dark-gray lg-w-100 sm-w-85 xs-w-100">
+                            <li><i class="fa-solid fa-check text-extra-medium-gray"></i> Regular health screenings
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fa-solid fa-check text-extra-medium-gray"></i>Emergency medical aid
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fa-solid fa-check text-extra-medium-gray"></i>Specialized medical camps
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fa-solid fa-check text-extra-medium-gray"></i>Support for vulnerable groups
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-9 p-0 md-margin-30px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <div class="position-relative">
+                            <div class="swiper slider-one-slide black-move" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 4500, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                                <div class="swiper-wrapper">
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide padding-15px-all">
+                                        <div class="h-100 bg-white box-shadow position-relative">
+                                            <img src="./images/blood.jpg" alt="">
+                                            <div class="padding-4-half-rem-lr padding-3-half-rem-tb feature-box feature-box-left-icon-middle last-paragraph-no-margin lg-padding-2-half-rem-lr sm-padding-4-rem-lr xs-padding-2-rem-all">
+                                                <div class="feature-box-icon margin-40px-right lg-margin-35px-right xs-margin-15px-right">
+                                                    <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0">01</h4>
+                                                </div>
+                                                <div class="feature-box-content padding-40px-left border-left border-width-2px border-color-shamrock-green lg-padding-35px-left xs-padding-15px-left">
+                                                    <span class="text-extra-dark-gray alt-font font-weight-500 d-block text-extra-medium margin-5px-bottom">Blood Donation Camp</span>
+                                                    <p>Organize life-saving Blood Donation Camps with us, contributing to the community s well-being and saving lives one donation at a time. Join us in making a difference today</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide padding-15px-all">
+                                        <div class="h-100 bg-white box-shadow position-relative">
+                                            <img src="./images/chekup.png" alt="">
+                                            <div class="padding-4-half-rem-lr padding-3-half-rem-tb feature-box feature-box-left-icon-middle last-paragraph-no-margin lg-padding-2-half-rem-lr sm-padding-4-rem-lr xs-padding-2-rem-all">
+                                                <div class="feature-box-icon margin-40px-right lg-margin-35px-right xs-margin-15px-right">
+                                                    <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0">02</h4>
+                                                </div>
+                                                <div class="feature-box-content padding-40px-left border-left border-width-2px border-color-shamrock-green lg-padding-35px-left xs-padding-15px-left">
+                                                    <span class="text-extra-dark-gray alt-font font-weight-500 d-block text-extra-medium margin-5px-bottom">Full Body Checkup</span>
+                                                    <p>Prioritize your health with our comprehensive Full Body Checkup. Detect potential issues early, ensuring a proactive approach to your well-being for a healthier and happier life.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide padding-15px-all">
+                                        <div class="h-100 bg-white box-shadow position-relative">
+                                            <img src="./images/heart.jpg" alt="" style="width: 100%;">
+                                            <div class="padding-4-half-rem-lr padding-3-half-rem-tb feature-box feature-box-left-icon-middle last-paragraph-no-margin lg-padding-2-half-rem-lr sm-padding-4-rem-lr xs-padding-2-rem-all">
+                                                <div class="feature-box-icon margin-40px-right lg-margin-35px-right xs-margin-15px-right">
+                                                    <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0">03</h4>
+                                                </div>
+                                                <div class="feature-box-content padding-40px-left border-left border-width-2px border-color-shamrock-green lg-padding-35px-left xs-padding-15px-left">
+                                                    <span class="text-extra-dark-gray alt-font font-weight-500 d-block text-extra-medium margin-5px-bottom">Free Heart Camp</span>
+                                                    <p>Take charge of your heart health at our Free Heart Camp. Receive expert screenings and guidance, ensuring a proactive approach to cardiovascular well-being for a healthier, happier life.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide padding-15px-all">
+                                        <div class="h-100 bg-white box-shadow position-relative">
+                                            <img src="./images/eye.jpeg" alt="" style="width: 100%;">
+                                            <div class="padding-4-half-rem-lr padding-3-half-rem-tb feature-box feature-box-left-icon-middle last-paragraph-no-margin lg-padding-2-half-rem-lr sm-padding-4-rem-lr xs-padding-2-rem-all">
+                                                <div class="feature-box-icon margin-40px-right lg-margin-35px-right xs-margin-15px-right">
+                                                    <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0">04</h4>
+                                                </div>
+                                                <div class="feature-box-content padding-40px-left border-left border-width-2px border-color-shamrock-green lg-padding-35px-left xs-padding-15px-left">
+                                                    <span class="text-extra-dark-gray alt-font font-weight-500 d-block text-extra-medium margin-5px-bottom">Free Eye Camp</span>
+                                                    <p>Join our Free Eye Camp to brighten lives through vision care. Comprehensive eye check-ups and assistance ensure a clearer future for those in need. See the world with compassion.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide padding-15px-all">
+                                        <div class="h-100 bg-white box-shadow position-relative">
+                                            <img src="./images/nursing.jpg" alt="" style="width: 100%;">
+                                            <div class="padding-4-half-rem-lr padding-3-half-rem-tb feature-box feature-box-left-icon-middle last-paragraph-no-margin lg-padding-2-half-rem-lr sm-padding-4-rem-lr xs-padding-2-rem-all">
+                                                <div class="feature-box-icon margin-40px-right lg-margin-35px-right xs-margin-15px-right">
+                                                    <h4 class="alt-font font-weight-600 text-extra-dark-gray mb-0">05</h4>
+                                                </div>
+                                                <div class="feature-box-content padding-40px-left border-left border-width-2px border-color-shamrock-green lg-padding-35px-left xs-padding-15px-left">
+                                                    <span class="text-extra-dark-gray alt-font font-weight-500 d-block text-extra-medium margin-5px-bottom">Nursing For Children and Oldage Home</span>
+                                                    <p>Extend care and compassion to children and the elderly in our nursing programs. Create a nurturing environment, ensuring their well-being and dignity in the later stages of life.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slider item -->
+                                </div>
+                            </div>
+                            <!-- start slider pagination -->
+                            <div class="swiper-button-next-nav swiper-button-next slider-navigation-style-08 dark"><i class="feather icon-feather-arrow-right text-extra-large"></i></div>
+                            <div class="swiper-button-previous-nav swiper-button-prev slider-navigation-style-08 dark"><i class="feather icon-feather-arrow-left text-extra-large"></i></div>
+                            <!-- end slider pagination -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 text-center margin-5-rem-bottom md-margin-4-rem-bottom wow animate__fadeIn">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-1px">Education and Training</h4>
+                        <p class="w-80 mx-auto md-w-100 mb-0">Empowering through education and skills development. We strive to enhance opportunities for learning and growth in schools, colleges, and beyond.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center">
+                    <!-- start team member -->
+                    <div class="col team-style-01 text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <figure class="border-radius-5px">
+                            <div class="team-member-image">
+                                <img alt="" src="images/education.jpg" style="height: 280px;">
+                                <div class="team-overlay bg-transparent-gradient-shamrock-green-light-orange"></div>
+                            </div>
+                            <figcaption class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                <span class="team-title d-block alt-font text-white text-uppercase" style="padding-bottom: 10px;">Helping Childs Education</span>
+                                <span class="team-sub-title text-small d-block text-white ">Empower the future by supporting children s education. Your contribution ensures access to quality learning, shaping bright minds and fostering a foundation for a better tomorrow.</span>
+                                
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end team member -->
+                    <!-- start team member -->
+                    <div class="col team-style-01 text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <figure class="border-radius-5px">
+                            <div class="team-member-image">
+                                <img alt="" src="images/amminities.jpg" style="height: 280px;">
+                                <div class="team-overlay bg-transparent-gradient-shamrock-green-light-orange"></div>
+                            </div>
+                            <figcaption class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                <span class="team-title d-block alt-font text-white text-uppercase" style="padding-bottom: 10px;">Amminities For School and Colleges</span>
+                                <span class="team-sub-title text-small d-block text-white ">Elevate education environments by supporting our Amenities for Schools and Colleges initiative. Enhance learning experiences with improved facilities, fostering a conducive atmosphere for academic excellence and growth.</span>
+                                
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end team member -->
+                    <!-- start team member -->
+                    <div class="col team-style-01 text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <figure class="border-radius-5px">
+                            <div class="team-member-image">
+                                <img alt="" src="images/skills.jpg" style="height: 280px;">
+                                <div class="team-overlay bg-transparent-gradient-shamrock-green-light-orange"></div>
+                            </div>
+                            <figcaption class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                <span class="team-title d-block alt-font text-white text-uppercase" style="padding-bottom: 10px;">Learning Skills And Training</span>
+                                <span class="team-sub-title text-small d-block text-white ">Unlock potential and opportunities with our Learning Skills and Training programs. Empower individuals through education and skill-building, paving the way for a brighter and more fulfilling future.</span>
+                                
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end team member -->
+                    <!-- start team member -->
+                    <div class="col team-style-01 text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        <figure class="border-radius-5px">
+                            <div class="team-member-image">
+                                <img alt="" src="images/adoption.jpg" style="height: 280px;">
+                                <div class="team-overlay bg-transparent-gradient-shamrock-green-light-orange"></div>
+                            </div>
+                            <figcaption class="align-items-center justify-content-center d-flex flex-column padding-20px-lr padding-30px-tb">
+                                <span class="team-title d-block alt-font text-white text-uppercase" style="padding-bottom: 10px;">Child Adoptation</span>
+                                <span class="team-sub-title text-small d-block text-white ">Transform a child s life through adoption. Provide a loving home, support, and a brighter future. Make a lifelong impact by opening your heart to adoption today.</span>
+                                
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end team member -->
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section --> 
+        <section class="bg-light-gray wow animate__fadeIn">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 text-center margin-5-rem-bottom md-margin-3-rem-bottom">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-1px">Social Welfare and Environment</h4>
+                        <p class="w-80 mx-auto md-w-100 mb-0">Building a sustainable future through community support and environmental stewardship. Our initiatives aim to improve living conditions and preserve natural resources.</p>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-12 blog-content">
+                        <ul class="blog-grid blog-wrapper grid grid-loading grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
+                            <li class="grid-sizer"></li>
+                            <!-- start blog item -->
+                            <li class="grid-item wow animate__fadeIn">
+                                <div class="blog-post border-radius-5px bg-white box-shadow-medium">
+                                    <div class="blog-post-image bg-medium-slate-blue">
+                                        <a href="blog-post-layout-01.html" title=""><img src="./images/food.jpg" alt="" style="height: 240px;"></a>
+                                    </div>
+                                    <div class="post-details padding-3-rem-lr padding-2-half-rem-tb">
+                                        <a href="blog-post-layout-01.html" class="alt-font font-weight-500 text-extra-medium text-extra-dark-gray text-shamrock-green-hover margin-15px-bottom d-block">Food for Needy People</a>
+                                        <p>Provide nourishment and hope to those in need with our Food Assistance program. Together, let s combat hunger and build a stronger, more compassionate community through shared meals.</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
+                            <!-- start blog item -->
+                            <li class="grid-item wow animate__fadeIn">
+                                <div class="blog-post border-radius-5px bg-white box-shadow-medium">
+                                    <div class="blog-post-image bg-medium-slate-blue">
+                                        <a href="blog-post-layout-01.html" title=""><img src="images/clothes.jpg" alt="" style="height: 240px;"></a>
+                                    </div>
+                                    <div class="post-details padding-3-rem-lr padding-2-half-rem-tb">
+                                        <a href="blog-post-layout-01.html" class="alt-font font-weight-500 text-extra-medium text-extra-dark-gray text-shamrock-green-hover margin-15px-bottom d-block">Clothes for Needy</a>
+                                        <p>Make a difference in someone s life by donating clothes to the needy. Your contribution provides warmth and dignity, spreading kindness one garment at a time <br> .</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
+                            <!-- start blog item -->
+                            <li class="grid-item wow animate__fadeIn">
+                                <div class="blog-post border-radius-5px bg-white box-shadow-medium">
+                                    <div class="blog-post-image bg-medium-slate-blue">
+                                        <a href="blog-post-layout-01.html" title=""><img src="images/planting.jpeg" alt="" style="height: 240px;"></a>
+                                    </div>
+                                    <div class="post-details padding-3-rem-lr padding-2-half-rem-tb">
+                                        <a href="blog-post-layout-01.html" class="alt-font font-weight-500 text-extra-medium text-extra-dark-gray text-shamrock-green-hover margin-15px-bottom d-block">Planting Trees</a>
+                                        <p>Contribute to a greener tomorrow by joining our tree-planting initiatives. Each planted tree is a step towards a healthier planet, combating climate change and preserving nature for future generations</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
+                            <!-- start blog item -->
+                            <li class="grid-item wow animate__fadeIn">
+                                <div class="blog-post border-radius-5px bg-white box-shadow-medium">
+                                    <div class="blog-post-image bg-medium-slate-blue">
+                                        <a href="blog-post-layout-01.html" title=""><img src="images/environment.jpg" alt="" style="height: 240px;"></a>
+                                    </div>
+                                    <div class="post-details padding-3-rem-lr padding-2-half-rem-tb">
+                                        <a href="blog-post-layout-01.html" class="alt-font font-weight-500 text-extra-medium text-extra-dark-gray text-shamrock-green-hover margin-15px-bottom d-block">Clean Environment</a>
+                                        <p>Be a part of the movement for a cleaner environment. Join our efforts to reduce pollution, waste, and promote sustainable practices, creating a healthier and more vibrant community for all.</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
+                            <!-- start blog item -->
+                            <li class="grid-item wow animate__fadeIn">
+                                <div class="blog-post border-radius-5px bg-white box-shadow-medium">
+                                    <div class="blog-post-image bg-medium-slate-blue">
+                                        <a href="blog-post-layout-01.html" title=""><img src="images/social.jpg" alt="" style="height: 240px;"></a>
+                                    </div>
+                                    <div class="post-details padding-3-rem-lr padding-2-half-rem-tb">
+                                        <a href="blog-post-layout-01.html" class="alt-font font-weight-500 text-extra-medium text-extra-dark-gray text-shamrock-green-hover margin-15px-bottom d-block">All Other Social Welfare</a>
+                                        <p>Embrace a broader impact through our diverse social welfare initiatives. Together, we create positive change, uplift communities, and foster a more compassionate and inclusive society for all.</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="big-section">
+            <div class="container">
+                <!-- <div class="row justify-content-center">
+                    <div class="col-12 text-center margin-six-bottom">
+                        <h6 class="alt-font text-extra-dark-gray font-weight-500">Google map style 01</h6>
+                    </div>
+                </div> -->
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <iframe class="w-100 h-500px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7820.750517219357!2d77.429769!3d11.452817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba93d9ed3c2229d%3A0xe2922757c9f47383!2s2nd%2C%2017%2C%20Ram%20Nagar%20Rd%2C%20Ram%20Nagar%2C%20Gobichettipalayam%2C%20Tamil%20Nadu%20638452!5e0!3m2!1sen!2sin!4v1718278989075!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section style="padding: 0;" id="payment">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 text-center margin-5-rem-bottom md-margin-4-rem-bottom wow animate__fadeIn">
+                        <h4 class="alt-font font-weight-600 text-extra-dark-gray letter-spacing-minus-1px">Payment Details</h4>
+                        
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-1 justify-content-center" style="max-width: 800px; margin: auto;">
+                    <!-- start team member -->
+                    <div class="col team-style-01 text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        
+                            <div style="margin-bottom: 10px;">
+                                <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">UPI ID :</h1>
+                                <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">000000000000000000</h2>
+                            </div>
+                            <div style="margin-bottom: 10px;">
+                                <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Paytm :</h1>
+                                <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">000000000000000000</h2>
+                            </div>
+                            <div style="margin-bottom: 10px;">
+                                <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Bank Name :</h1>
+                                <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">AXIS Bank</h2>
+                            </div>
+                            <div style="margin-bottom: 10px;">
+                                <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Account Name :</h1>
+                                <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">SRI ANNALAKSMHI CHARITABLE TRUST</h2>
+                            </div>
+                            
+                            
+                    </div>
+                    <!-- end team member -->
+                    <!-- start team member -->
+                    <div class="col team-style-01 text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
+                        
+                        <div style="margin-bottom: 10px;">
+                            <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Account Number :</h1>
+                            <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">922020048615351</h2>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">IFSC Code :</h1>
+                            <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">UTIB0000118</h2>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Accoutn Type :</h1>
+                            <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">CATRS</h2>
+                        </div>
+                            
+                    </div>
+                    <!-- end team member -->
+                    
+                </div>
+                
+            </div>
+        </section>
+        <!-- end section -->
+        
+        <!-- start footer -->
+        <footer class="footer-dark bg-slate-blue" style="position: relative; z-index: 1200;">
+            <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
+                <div class="container">
+                    <div class="row">
+                        <!-- start footer column -->
+                        <div class="col-lg-3 col-md-5 col-sm-6 order-sm-1 order-lg-0 md-margin-50px-bottom xs-margin-25px-bottom">
+                            <a href="index.html" class="footer-logo margin-20px-bottom d-block"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt=""></a>
+                            <p class="w-80 sm-w-100 margin-20px-bottom">Dedicated to improving lives through education, healthcare, and community support.</p>
+                            <div class="social-icon-style-12">
+                                <ul class="extra-small-icon light">
+                                    <li><a href="tel:8675463333"><i class="fa-solid fa-phone"></i></a></li>
+                                    <li><a href="mailto:sriannalakshmitrust@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                                    <li><a href="https://wa.me/8675463333" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="col-lg-3 col-md-5 col-sm-6 order-sm-1 order-lg-0 md-margin-50px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block text-white ">Phone</span>
+                            <ul>
+                                <li><a href="tel:8675463333" target="_blank">8675463333</a></li>
+                            </ul>
+                            <span class="alt-font font-weight-500 d-block text-white ">Email</span>
+                            <ul>
+                                <li><a href="mailto:sriannalakshmitrust@gmail.com" target="_blank">sriannalakshmitrust@gmail.com</a></li>
+                            </ul>
+                            <span class="alt-font font-weight-500 d-block text-white ">Address</span>
+                            <ul>
+                                <li><a href="https://www.google.com/maps/search/?api=1&query=17+Ramnagar+2nd+Street+Gobi+638452" target="_blank">17 , Ramnagar , 2nd Street , Gobi - 638452</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+                        
+                        <!-- start footer column -->
+                        <div class="col-lg-2 col-sm-4 order-sm-5 order-lg-0 xs-margin-25px-bottom">
+                            <!-- <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Additional</span>
+                            <ul>
+                                <li><a href="">Our story</a></li>
+                                <li><a href="">Who we are</a></li>
+                                <li><a href="">Our process</a></li>
+                                <li><a href="">Latest news</a></li>
+                            </ul> -->
+                        </div>
+                        <!-- end footer column -->
+                        <!-- start footer column -->
+                        <div class="col-lg-3 col-md-5 col-sm-6 order-sm-2 order-lg-0 md-margin-50px-bottom xs-no-margin-bottom">
+                            <!-- <span class="alt-font font-weight-500 d-block text-white margin-30px-bottom xs-margin-25px-bottom">Latest blog</span>
+                            <ul>
+                                <li class="media d-flex">
+                                    <a href="blog-post-layout-01.html" class="flex-shrink-0 w-75px margin-30px-right sm-margin-15px-right xs-margin-30px-right">
+                                        <img src="https://via.placeholder.com/800x560" alt="">
+                                    </a>
+                                    <div class="media-body flex-grow-1">
+                                        <a href="blog-post-layout-01.html">I think really important to design with...</a>
+                                    </div>
+                                </li>
+                                <li class="media d-flex">
+                                    <a href="blog-post-layout-02.html" class="flex-shrink-0 w-75px margin-30px-right sm-margin-15px-right xs-margin-30px-right">
+                                        <img src="https://via.placeholder.com/800x560" alt="">
+                                    </a>
+                                    <div class="media-body flex-grow-1">
+                                        <a href="blog-post-layout-02.html">Recognizing the need is the primary...</a>
+                                    </div>
+                                </li>
+                            </ul> -->
+                            <div style="width: 100%;">
+                                <img src="./images/testqr.png" style="width: 100%;" alt="">
+                            </div>
+                        </div>
+                        <!-- end footer column -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom padding-35px-tb border-top border-color-white-transparent">
+                <div class="container"> 
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <!-- <div class="col sm-margin-10px-bottom xs-margin-15px-bottom">
+                            <ul class="footer-horizontal-link d-flex flex-column flex-sm-row justify-content-sm-center justify-content-md-start">
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Legal notice</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="col text-start text-sm-center text-md-end last-paragraph-no-margin">
+                            <p>&copy; 2024 annalakshmi. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="qrcontainer">
+            <div class="qr-code">
+                <img src="images/testqr.png" alt="QR Code">
+                <div class="qr-toggle" style="color: black; align-items: center; justify-content: center; font-weight: 700; box-shadow: 1px 1px 2px #ccc , -1px -1px 2px #ccc;">QR</div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <!-- start scroll to top -->
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+        <!-- end scroll to top -->
+        <!-- javascript -->
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const qrToggle = document.querySelector(".qr-toggle");
+                const qrCode = document.querySelector(".qr-code img");
+            
+                qrToggle.addEventListener("click", function() {
+                    qrCode.style.display = (qrCode.style.display === "block") ? "none" : "block";
+                });
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/theme-vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
