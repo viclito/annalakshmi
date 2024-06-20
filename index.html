@@ -29,6 +29,7 @@
             }
             
             .qr-code {
+                background-color: white;
                 position: relative;
             }
             
@@ -60,6 +61,38 @@
                 .qr-toggle {
                     display: flex;
                 }
+                .awardimg{
+                    
+                    display: none !important;
+                }
+                .awardimg2{   
+                    display: block !important;
+                }
+                .awardtext{
+                    display: none !important;
+                }
+                .awardtext2 , .hidingsec{
+                    display: flex !important;
+                }
+                .paddinginc{
+                    margin: 0 15%;
+                }
+            }
+            .awardtext{
+                display: block;
+            }
+            .awardtext2 , .hidingsec{
+                display: none;
+            }
+            .awardimg{
+                display: block;
+                width: 110px;
+                height: auto;
+            }
+            .awardimg2{
+                display: none;
+                width: 110px;
+                height: auto;
             }
         </style>
     </head>
@@ -117,9 +150,9 @@
                     <div class="col-auto col-lg-2 text-end pe-0 font-size-0">
                         <div class="header-social-icon d-inline-block">
                             
-                            <a href="tel:8675463333"><i class="fa-solid fa-phone"></i></a>
+                            <a href="tel:8667059505"><i class="fa-solid fa-phone"></i></a>
                             <a href="mailto:sriannalakshmitrust@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                            <a href="https://wa.me/8675463333" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://wa.me/8667059505" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -237,6 +270,28 @@
             </div>
         </section>
         <!-- end section -->
+
+        <!-- start section -->
+        <section class="hidingsec big-section parallax overlap-height" data-parallax-background-ratio="0.5" style=" align-items: center; justify-content: center;">
+            <img class="awardimg2" src="./images/award.png" alt="" >
+            <h6 class="awardtext2 alt-font font-weight-500 text-black text-uppercase letter-spacing-minus-1px mb-0 wow animate__fadeIn " data-wow-delay="0.4s">Prestigious Customer Award</h6>
+        </section>
+        <section class="paddinginc big-section parallax overlap-height" data-parallax-background-ratio="0.5" style="background-image:url('./images/awarding.jpeg');">
+            <div class="opacity-extra-medium bg-dark-purple"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center z-index-1 overlap-gap-section">
+                        <a href="" class="popup-youtube video-icon-box video-icon-large d-inline-block margin-4-rem-bottom wow animate__zoomIn" data-wow-delay="0.2s">
+                            <img class="awardimg" src="./images/award.png" alt="" >
+                        </a>
+                        <h6 class="awardtext alt-font font-weight-500 text-white text-uppercase letter-spacing-minus-1px mb-0 wow animate__fadeIn " data-wow-delay="0.4s">Prestigious Customer Award</h6>
+                        <!-- <img src="images/hotel-resort-img-20.png" class=" wow animate__fadeIn" data-wow-delay="0.6s" alt=""/> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+         
         <!-- start section -->
         <section id="resource" class="big-section cover-background" style="background-image: url('images/home-corporate-hand-crafted-bg.jpg');">
             <div class="container">
@@ -625,7 +680,7 @@
         <!-- end section -->
 
         <!-- start section -->
-        <section style="padding: 0;" id="payment">
+        <section style="padding: 0 0 50px 0;" id="payment">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-8 text-center margin-5-rem-bottom md-margin-4-rem-bottom wow animate__fadeIn">
@@ -638,14 +693,7 @@
                     <!-- start team member -->
                     <div class="col team-style-01 text-center md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeIn" data-wow-delay="0.2s">
                         
-                            <div style="margin-bottom: 10px;">
-                                <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">UPI ID :</h1>
-                                <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">000000000000000000</h2>
-                            </div>
-                            <div style="margin-bottom: 10px;">
-                                <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Paytm :</h1>
-                                <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">000000000000000000</h2>
-                            </div>
+                           
                             <div style="margin-bottom: 10px;">
                                 <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Bank Name :</h1>
                                 <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">AXIS Bank</h2>
@@ -669,10 +717,7 @@
                             <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">IFSC Code :</h1>
                             <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">UTIB0000118</h2>
                         </div>
-                        <div style="margin-bottom: 10px;">
-                            <h1 style="font-size: 15px; color: black;font-weight: 600; margin: 0; padding: 0; line-height: 1.4;text-align: start;">Accoutn Type :</h1>
-                            <h2 style="font-size: 13px; color: black; padding-left: 15px; font-weight: 500; margin: 0; padding: 0;line-height: 1.8;text-align: start;">CATRS</h2>
-                        </div>
+                        
                             
                     </div>
                     <!-- end team member -->
@@ -690,7 +735,7 @@
                     <div class="row">
                         <!-- start footer column -->
                         <div class="col-lg-3 col-md-5 col-sm-6 order-sm-1 order-lg-0 md-margin-50px-bottom xs-margin-25px-bottom">
-                            <a href="index.html" class="footer-logo margin-20px-bottom d-block"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt=""></a>
+                            <a href="" class="footer-logo margin-20px-bottom d-block"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt=""></a>
                             <p class="w-80 sm-w-100 margin-20px-bottom">Dedicated to improving lives through education, healthcare, and community support.</p>
                             <div class="social-icon-style-12">
                                 <ul class="extra-small-icon light">
@@ -706,7 +751,7 @@
                         <div class="col-lg-3 col-md-5 col-sm-6 order-sm-1 order-lg-0 md-margin-50px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block text-white ">Phone</span>
                             <ul>
-                                <li><a href="tel:8675463333" target="_blank">8675463333</a></li>
+                                <li><a href="tel:8667059505" target="_blank">8667059505</a></li>
                             </ul>
                             <span class="alt-font font-weight-500 d-block text-white ">Email</span>
                             <ul>
@@ -751,8 +796,8 @@
                                     </div>
                                 </li>
                             </ul> -->
-                            <div style="width: 100%;">
-                                <img src="./images/testqr.png" style="width: 100%;" alt="">
+                            <div style="width: 100%; background-color: white;">
+                                <img src="./images/qr.png" style="width: 100%;" alt="">
                             </div>
                         </div>
                         <!-- end footer column -->
@@ -778,7 +823,7 @@
         </footer>
         <div class="qrcontainer">
             <div class="qr-code">
-                <img src="images/testqr.png" alt="QR Code">
+                <img src="images/qr.png" alt="QR Code">
                 <div class="qr-toggle" style="color: black; align-items: center; justify-content: center; font-weight: 700; box-shadow: 1px 1px 2px #ccc , -1px -1px 2px #ccc;">QR</div>
             </div>
         </div>
